@@ -22,7 +22,7 @@ let search_str = document.querySelector("#search_txt"); // 변수에 저장
 		}
     }
 	
-// 추가구현: 비속어 제거
+	// 추가구현: 비속어 제거
 	
 	function no_str(text) {
   	const bannedWords = ["Rjwu", "tlqkf", "qudtls"]; // 필터링할 비속어 목록
