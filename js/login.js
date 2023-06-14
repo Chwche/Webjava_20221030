@@ -37,6 +37,7 @@
         alert("아이디와 비밀번호를 모두 입력해주세요.");
     } else if (!login_check(id.value, password.value)) {
         alert("올바른 이메일과 패스워드 형식을 입력해주세요.");
+		checkLoginAttempts();
     } else {
 		form.action = "../index_login.html";
     	form.method = "get";
@@ -66,13 +67,16 @@
   	var inputs = form.getElementsByTagName("input");
   
   	for (var i = 0; i < inputs.length; i++) {
-    inputs[i].disabled = true;
+    setTimeout(inputs[i].disabled = true, 1/1440);
+	clearTimeout(inputs[i].disabled = true);
   	}
   
-  	var loginButton = form.querySelector("button[type='button']");
-  	loginButton.disabled = true;
+  	var loginButton = form.querySelector("button[type='submit']");
+  	setTimeout(loginButton.disabled = true, 1/1440);
+	clearTimeout(loginButton.disabled = true);
 	}
-
+	
+	
 //추가구현: 로그인, 로그아웃 쿠키 카운팅
 	//로그인카운트
 	function login_count() {
