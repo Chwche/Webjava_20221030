@@ -142,4 +142,3 @@
 	alert(getParameters('id') + '님 방갑습니다!'); // 메시지 창 출력
 	}
 	}
-
