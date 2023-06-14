@@ -9,7 +9,7 @@ function setCookie(name, value, days) {
   document.cookie = name + '=' + value + expires + '; path=/';
 }
 		
-//쿠키 GET
+///쿠키 GET
 	function getCookie(name) {
   	var cookieArr = document.cookie.split(';');
   	for (var i = 0; i < cookieArr.length; i++) {
