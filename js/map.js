@@ -293,6 +293,4 @@ function displayPlaces(places) {
     
 	});
 
-//추가구현: 
-
 	
